@@ -13,7 +13,7 @@
         <!--List an item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainTableVC" customModule="SampleSearchDetails" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainTableVC" customModule="TendBlockChain" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -26,35 +26,33 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="Jfu-mR-Rp8" customClass="NameCell" customModule="SampleSearchDetails" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="Jfu-mR-Rp8" customClass="NameCell" customModule="TendBlockChain" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jfu-mR-Rp8" id="4r6-jn-0fm">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uo3-Kk-jyV">
-                                                    <rect key="frame" x="317" y="11" width="31" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.64608180522918701" green="0.65524977445602417" blue="0.66699200868606567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcP-YZ-b4R">
                                                     <rect key="frame" x="16" y="11" width="45" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uo3-Kk-jyV">
+                                                    <rect key="frame" x="311" y="11" width="31" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.64608180522918701" green="0.65524977445602417" blue="0.66699200868606567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="uo3-Kk-jyV" firstAttribute="centerY" secondItem="4r6-jn-0fm" secondAttribute="centerY" id="1Nx-cc-wD3"/>
+                                                <constraint firstAttribute="trailing" secondItem="uo3-Kk-jyV" secondAttribute="trailing" id="4JM-gx-oiB"/>
                                                 <constraint firstItem="VcP-YZ-b4R" firstAttribute="leading" secondItem="4r6-jn-0fm" secondAttribute="leadingMargin" constant="8" id="DDZ-gM-UZZ"/>
                                                 <constraint firstItem="VcP-YZ-b4R" firstAttribute="centerY" secondItem="4r6-jn-0fm" secondAttribute="centerY" id="IUc-Ar-IHD"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="uo3-Kk-jyV" secondAttribute="trailing" constant="27" id="rrC-I6-ZUd"/>
-                                        </constraints>
                                         <connections>
                                             <outlet property="nameLabel" destination="VcP-YZ-b4R" id="w0X-LL-Ubx"/>
                                         </connections>
@@ -89,13 +87,13 @@
         <!--Choose Details TableVC-->
         <scene sceneID="U1n-di-3rL">
             <objects>
-                <tableViewController id="UUJ-dW-YDH" customClass="ChooseDetailsTableVC" customModule="SampleSearchDetails" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="UUJ-dW-YDH" customClass="ChooseDetailsTableVC" customModule="TendBlockChain" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="heV-fA-2d5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="wqh-3y-8F2" detailTextLabel="Dvt-fJ-nRR" style="IBUITableViewCellStyleSubtitle" id="8gH-rJ-79G" customClass="TitleAndValueCell" customModule="SampleSearchDetails" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="wqh-3y-8F2" detailTextLabel="Dvt-fJ-nRR" style="IBUITableViewCellStyleSubtitle" id="8gH-rJ-79G" customClass="TitleAndValueCell" customModule="TendBlockChain" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8gH-rJ-79G" id="fyM-p8-XhE">
@@ -123,7 +121,7 @@
                                     <outlet property="titleLabel" destination="wqh-3y-8F2" id="grO-5w-CJV"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlockSaleCell" id="sG2-mF-Uyg" customClass="BlockSaleCell" customModule="SampleSearchDetails" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlockSaleCell" id="sG2-mF-Uyg" customClass="BlockSaleCell" customModule="TendBlockChain" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="100" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sG2-mF-Uyg" id="Y1B-Zx-jsh">
@@ -162,15 +160,15 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkW-I7-bcQ">
-                                            <rect key="frame" x="100" y="0.0" width="175" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <state key="normal" title="Preview Sell Order"/>
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="UkW-I7-bcQ" secondAttribute="trailing" constant="100" id="BOQ-Hz-lVN"/>
                                         <constraint firstItem="UkW-I7-bcQ" firstAttribute="top" secondItem="aLp-tZ-VeL" secondAttribute="top" id="Hwd-g1-VTk"/>
-                                        <constraint firstItem="UkW-I7-bcQ" firstAttribute="leading" secondItem="aLp-tZ-VeL" secondAttribute="leading" constant="100" id="tUo-Pc-CzK"/>
-                                        <constraint firstAttribute="bottom" secondItem="UkW-I7-bcQ" secondAttribute="bottom" id="yo9-Lu-fuk"/>
+                                        <constraint firstAttribute="bottom" secondItem="UkW-I7-bcQ" secondAttribute="bottom" id="W0D-Lo-sqm"/>
+                                        <constraint firstItem="UkW-I7-bcQ" firstAttribute="leading" secondItem="aLp-tZ-VeL" secondAttribute="leading" id="WWK-VR-8iH"/>
+                                        <constraint firstAttribute="trailing" secondItem="UkW-I7-bcQ" secondAttribute="trailing" id="yfd-c3-HY7"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -203,7 +201,7 @@
         <!--Number SelectVC-->
         <scene sceneID="TtG-yK-1ni">
             <objects>
-                <viewController id="zAT-bg-Msg" customClass="NumberSelectVC" customModule="SampleSearchDetails" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zAT-bg-Msg" customClass="NumberSelectVC" customModule="TendBlockChain" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FQY-sQ-GHA"/>
                         <viewControllerLayoutGuide type="bottom" id="vYH-zl-rIi"/>
@@ -212,42 +210,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Tx-BJ-btI">
-                                <rect key="frame" x="16" y="94" width="343" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oI-AD-beY">
+                                <rect key="frame" x="0.0" y="84" width="375" height="112"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Tx-BJ-btI">
+                                        <rect key="frame" x="12" y="30" width="351" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrV-eL-pdy">
+                                        <rect key="frame" x="12" y="8" width="150" height="14.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="o7b-7T-Vpc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnU-14-DFv">
+                                        <rect key="frame" x="12" y="68" width="351" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="pZV-F6-ECX"/>
+                                    <constraint firstItem="4Tx-BJ-btI" firstAttribute="top" secondItem="TrV-eL-pdy" secondAttribute="bottom" constant="7.5" id="1Wc-ho-NSd"/>
+                                    <constraint firstItem="KnU-14-DFv" firstAttribute="leading" secondItem="4Tx-BJ-btI" secondAttribute="leading" id="6wv-fN-c0K"/>
+                                    <constraint firstItem="4Tx-BJ-btI" firstAttribute="leading" secondItem="TrV-eL-pdy" secondAttribute="leading" id="EZR-Kh-IgV"/>
+                                    <constraint firstAttribute="height" constant="112" id="PDg-Uc-DWV"/>
+                                    <constraint firstItem="TrV-eL-pdy" firstAttribute="leading" secondItem="9oI-AD-beY" secondAttribute="leading" constant="12" id="XHb-XH-YiE"/>
+                                    <constraint firstItem="TrV-eL-pdy" firstAttribute="top" secondItem="9oI-AD-beY" secondAttribute="top" constant="8" id="ZCP-x4-7yk"/>
+                                    <constraint firstItem="KnU-14-DFv" firstAttribute="width" secondItem="4Tx-BJ-btI" secondAttribute="width" id="fW5-hf-Hbe"/>
+                                    <constraint firstItem="4Tx-BJ-btI" firstAttribute="width" secondItem="9oI-AD-beY" secondAttribute="width" constant="-24" id="h7x-iS-Zvi"/>
+                                    <constraint firstItem="KnU-14-DFv" firstAttribute="top" secondItem="4Tx-BJ-btI" secondAttribute="bottom" constant="8" id="r73-kS-L7s"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrV-eL-pdy">
-                                <rect key="frame" x="16" y="72" width="150" height="14.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="o7b-7T-Vpc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnU-14-DFv">
-                                <rect key="frame" x="16" y="132" width="343" height="15"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="eNW-3d-iGm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4Tx-BJ-btI" firstAttribute="top" secondItem="FQY-sQ-GHA" secondAttribute="bottom" constant="30" id="Hxm-Jt-DXM"/>
-                            <constraint firstItem="TrV-eL-pdy" firstAttribute="top" secondItem="FQY-sQ-GHA" secondAttribute="bottom" constant="8" id="Miu-rA-sfN"/>
-                            <constraint firstItem="KnU-14-DFv" firstAttribute="top" secondItem="4Tx-BJ-btI" secondAttribute="bottom" constant="8" id="O3P-fa-4GR"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="TrV-eL-pdy" secondAttribute="leading" id="UT7-Zq-8GX"/>
-                            <constraint firstItem="KnU-14-DFv" firstAttribute="leading" secondItem="DyT-sp-h5m" secondAttribute="leadingMargin" id="dMU-JA-6LE"/>
-                            <constraint firstItem="4Tx-BJ-btI" firstAttribute="leading" secondItem="DyT-sp-h5m" secondAttribute="leadingMargin" id="dVP-Sx-LXy"/>
+                            <constraint firstItem="9oI-AD-beY" firstAttribute="top" secondItem="FQY-sQ-GHA" secondAttribute="bottom" constant="20" id="DDr-Py-SxD"/>
+                            <constraint firstItem="9oI-AD-beY" firstAttribute="leading" secondItem="DyT-sp-h5m" secondAttribute="leading" id="Je5-xl-5N9"/>
+                            <constraint firstAttribute="trailing" secondItem="9oI-AD-beY" secondAttribute="trailing" id="uqf-cs-m7v"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rBF-96-csO">
@@ -271,7 +277,7 @@
         <!--Preview-->
         <scene sceneID="xDi-8R-1bS">
             <objects>
-                <tableViewController id="yig-Aa-e8x" customClass="PreviewTableVC" customModule="SampleSearchDetails" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="yig-Aa-e8x" customClass="PreviewTableVC" customModule="TendBlockChain" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="2Sl-1o-FZ2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -313,7 +319,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Odc-W0-AJM" customClass="PreviewLabelsCell" customModule="SampleSearchDetails" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Odc-W0-AJM" customClass="PreviewLabelsCell" customModule="TendBlockChain" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="475" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="Odc-W0-AJM" id="ngM-gb-37A">
@@ -629,20 +635,20 @@
         <!--Preview-->
         <scene sceneID="3sj-mI-UVY">
             <objects>
-                <tableViewController id="fKj-xI-6fg" customClass="PreviewTableVC" customModule="SampleSearchDetails" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="fKj-xI-6fg" customClass="PreviewTableVC" customModule="TendBlockChain" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="20" sectionFooterHeight="20" id="Xtr-BC-frf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="375" id="wDE-He-Fqj" customClass="PhotoCell" customModule="SampleSearchDetails" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="375" id="wDE-He-Fqj" customClass="PhotoCell" customModule="TendBlockChain" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="375" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wDE-He-Fqj" id="xaB-vV-cyY">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gKJ-cU-dxn">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gKJ-cU-dxn">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
                                         </imageView>
                                     </subviews>
@@ -657,7 +663,7 @@
                                     <outlet property="photo" destination="gKJ-cU-dxn" id="eWy-tI-7pg"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="nzN-J0-cbV" customClass="PreviewLabelsCell" customModule="SampleSearchDetails" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="nzN-J0-cbV" customClass="PreviewLabelsCell" customModule="TendBlockChain" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="395" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="nzN-J0-cbV" id="muj-NU-2LF">
@@ -733,7 +739,7 @@
         <!--FinalVC-->
         <scene sceneID="V7s-fq-FRe">
             <objects>
-                <tableViewController id="E5H-ra-xcs" customClass="FinalVC" customModule="SampleSearchDetails" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="E5H-ra-xcs" customClass="FinalVC" customModule="TendBlockChain" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="X6M-zL-XpA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -820,7 +826,7 @@
         <!--Pick a date-->
         <scene sceneID="Skb-Ma-Qdv">
             <objects>
-                <viewController id="OX9-Kh-wza" customClass="DatePickerVC" customModule="SampleSearchDetails" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OX9-Kh-wza" customClass="DatePickerVC" customModule="TendBlockChain" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j4S-jq-YzQ"/>
                         <viewControllerLayoutGuide type="bottom" id="aMf-We-J8X"/>
@@ -870,7 +876,7 @@
         <!--Pick Year-->
         <scene sceneID="RhA-Qg-yu9">
             <objects>
-                <viewController id="xab-oS-z4y" customClass="YearPickerVC" customModule="SampleSearchDetails" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xab-oS-z4y" customClass="YearPickerVC" customModule="TendBlockChain" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DMK-TN-xgX"/>
                         <viewControllerLayoutGuide type="bottom" id="vMg-ia-3uD"/>
@@ -916,7 +922,7 @@
         <!--Pick a location-->
         <scene sceneID="6AV-sQ-ToU">
             <objects>
-                <viewController id="ZKY-hY-vs3" customClass="LocationVC" customModule="SampleSearchDetails" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZKY-hY-vs3" customClass="LocationVC" customModule="TendBlockChain" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zaC-y9-aN3"/>
                         <viewControllerLayoutGuide type="bottom" id="ptR-eE-r7s"/>

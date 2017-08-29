@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  SampleSearchDetails
+//  TendBlockChain
 //
 //  Created by Doru Cojocaru on 23/08/2017.
 //  Copyright © 2017 Doru Cojocaru. All rights reserved.
@@ -27,7 +27,6 @@ class MainTableVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
         tableView.tableHeaderView = searchController.searchBar
         definesPresentationContext = true
         searchController.dimsBackgroundDuringPresentation = false
-        
         searchController.searchBar.delegate = self
         filteredNames = names
     }
@@ -56,8 +55,7 @@ class MainTableVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetailsIdentifier" {
-            let destination = segue.destination as! ChooseDetailsTableVC
+        if let destination = segue.destination as? ChooseDetailsTableVC {
             destination.selectedItem = selectedItem
         }
     }
@@ -79,7 +77,6 @@ class MainTableVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
     }
     
     @IBAction func unwindToMainTableVC(segue: UIStoryboardSegue) {
-        
     }
 }
 

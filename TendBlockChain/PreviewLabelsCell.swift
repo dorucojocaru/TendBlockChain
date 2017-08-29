@@ -1,6 +1,6 @@
 //
 //  PreviewLabelsCell.swift
-//  SampleSearchDetails
+//  TendBlockChain
 //
 //  Created by Doru Cojocaru on 25/08/2017.
 //  Copyright © 2017 Doru Cojocaru. All rights reserved.
@@ -9,6 +9,7 @@
 import UIKit
 
 class PreviewLabelsCell: UITableViewCell {
+   
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
 
@@ -22,5 +23,4 @@ class PreviewLabelsCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

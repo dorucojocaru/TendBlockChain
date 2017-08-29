@@ -1,6 +1,6 @@
 //
 //  YearPickerVC.swift
-//  SampleSearchDetails
+//  TendBlockChain
 //
 //  Created by Doru Cojocaru on 23/08/2017.
 //  Copyright © 2017 Doru Cojocaru. All rights reserved.
@@ -26,8 +26,6 @@ class YearPickerVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! ChooseDetailsTableVC
-        destination.pickedYear = pickedYear
-        
         destination.titlesAndValues![0][1].1 = pickedYear
     }
 }
@@ -44,6 +42,6 @@ extension YearPickerVC: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         pickedYear = String(pickerData[row])
-        return String(pickerData[row])
+        return pickedYear
     }
 }

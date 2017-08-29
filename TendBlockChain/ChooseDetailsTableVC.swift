@@ -1,6 +1,6 @@
 //
 //  ChooseDetailsTableVC.swift
-//  SampleSearchDetails
+//  TendBlockChain
 //
 //  Created by Doru Cojocaru on 23/08/2017.
 //  Copyright © 2017 Doru Cojocaru. All rights reserved.
@@ -11,26 +11,13 @@ import ImagePicker
 
 class ChooseDetailsTableVC: UITableViewController {
     
-    var nrOfSelectedPhotos = 0
     var selectedPhotos: [UIImage]?
-    var pickedYear: String?
-    var boughtAtPrice: String?
-    var lastMarketSellPrice: String?
-    var pickedDate: String?
-    var tag = Int()
-    var yourLastSoldPrice: String?
-    var yourOpenSellPrice: String?
-    var quantity: String?
-    var pricePerToken: String?
-    var estimatedAmount: String?
-    var location: String?
     var selectedItem: String?
     var titlesAndValues: [[(String, String, String)]]?
-    var chosenValues: [[(String, String)]]?
     var row: Int?
     var section: Int?
     var blockSaleSwitch = "No"
-
+    
     @IBAction func blockSaleChanged(_ sender: UISwitch) {
         blockSaleSwitch = sender.isOn.description
         if blockSaleSwitch == "true" {
@@ -39,7 +26,6 @@ class ChooseDetailsTableVC: UITableViewController {
             blockSaleSwitch = "No"
         }
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,8 +41,7 @@ class ChooseDetailsTableVC: UITableViewController {
             let imagePickerController = ImagePickerController()
             imagePickerController.delegate = self
             present(imagePickerController, animated: true, completion: nil)
-            print("***Special imagePIcker Launched*******")
-            
+            print("***Special imagePicker Launched*******")
         } else if indexPath.section == 0 && indexPath.row == 1 {
             performSegue(withIdentifier: "showYearPicker", sender: self)
         } else if indexPath.section == 0 && indexPath.row == 2 {
@@ -85,8 +70,8 @@ class ChooseDetailsTableVC: UITableViewController {
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TitleAndValueCell
             cell.titleLabel.text = titlesAndValues![indexPath.section][indexPath.row].0
-            if titlesAndValues![indexPath.section][indexPath.row].1.characters.count == 0 {
-            cell.descriptionLabel.text = titlesAndValues![indexPath.section][indexPath.row].2
+            if titlesAndValues![indexPath.section][indexPath.row].1.isEmpty {
+                cell.descriptionLabel.text = titlesAndValues![indexPath.section][indexPath.row].2
             } else {
                 cell.descriptionLabel.text = titlesAndValues![indexPath.section][indexPath.row].1
                 cell.descriptionLabel.textColor = UIColor(red: 0.06, green: 0.49, blue: 1.00, alpha: 1.0)
@@ -130,17 +115,18 @@ class ChooseDetailsTableVC: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titlesAndValues![section].count
     }
+    
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         navigationController?.popViewController(animated: true)
     }
 }
 
 extension ChooseDetailsTableVC: ImagePickerDelegate {
+    
     func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
     }
     
     func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
-        nrOfSelectedPhotos = images.count
         titlesAndValues?[0][0].1 = String(images.count)
         selectedPhotos = images
         imagePicker.dismiss(animated: true, completion: nil)

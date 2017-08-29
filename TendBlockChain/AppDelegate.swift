@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SampleSearchDetails
+//  TendBlockChain
 //
 //  Created by Doru Cojocaru on 23/08/2017.
 //  Copyright © 2017 Doru Cojocaru. All rights reserved.

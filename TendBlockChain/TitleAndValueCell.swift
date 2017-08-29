@@ -1,6 +1,6 @@
 //
 //  TitleAndValueCell.swift
-//  SampleSearchDetails
+//  TendBlockChain
 //
 //  Created by Doru Cojocaru on 28/08/2017.
 //  Copyright © 2017 Doru Cojocaru. All rights reserved.
@@ -9,6 +9,7 @@
 import UIKit
 
 class TitleAndValueCell: UITableViewCell {
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
 
@@ -22,5 +23,4 @@ class TitleAndValueCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

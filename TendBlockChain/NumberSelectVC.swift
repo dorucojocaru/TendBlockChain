@@ -1,6 +1,6 @@
 //
 //  NumberSelectVC.swift
-//  SampleSearchDetails
+//  TendBlockChain
 //
 //  Created by Doru Cojocaru on 24/08/2017.
 //  Copyright © 2017 Doru Cojocaru. All rights reserved.
@@ -14,7 +14,6 @@ class NumberSelectVC: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    var tagToCheck = Int()
     var row: Int?
     var section: Int?
     var navBarTitle: String?
@@ -27,14 +26,13 @@ class NumberSelectVC: UIViewController {
         
         navigationItem.hidesBackButton = false
         navigationItem.title = navBarTitle
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! ChooseDetailsTableVC
         if let number = textField.text {
             destination.titlesAndValues![section!][row!].1 = number
-            }
         }
     }
+}
 

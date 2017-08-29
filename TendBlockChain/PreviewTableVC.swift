@@ -1,6 +1,6 @@
 //
 //  PreviewTableVC.swift
-//  SampleSearchDetails
+//  TendBlockChain
 //
 //  Created by Doru Cojocaru on 25/08/2017.
 //  Copyright © 2017 Doru Cojocaru. All rights reserved.
@@ -11,8 +11,6 @@ import UIKit
 class PreviewTableVC: UITableViewController {
     
     var photo: UIImage?
-    
-    //    var titles: [[String]]?
     var values: [[(String, String, String)]]?
     var valuesArray: [String]?
     var selectedItem: String?
@@ -20,7 +18,6 @@ class PreviewTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        //        titles = [["", "Title", "Date", "Location", "Bought at", "Last market sell price at", "Your last sold price at", "Your open sell price at"], ["Quantity", "Price", "Block Sale", "Good Until", "Estimated Amount"], [""]]
         values![0].insert(("","", ""), at: 0)
         navigationItem.title = "Preview"
     }
