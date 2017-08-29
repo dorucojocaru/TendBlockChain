@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2C8F7C472DA7E05ECDCC92C /* Pods_TendBlockChain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D40898C7168D5FC357CB8D /* Pods_TendBlockChain.framework */; };
+		CE8133711F5557F000AFBEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81335D1F5557F000AFBEBB /* AppDelegate.swift */; };
+		CE8133721F5557F000AFBEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE81335E1F5557F000AFBEBB /* Assets.xcassets */; };
+		CE8133731F5557F000AFBEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE81335F1F5557F000AFBEBB /* LaunchScreen.storyboard */; };
+		CE8133741F5557F000AFBEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8133611F5557F000AFBEBB /* Main.storyboard */; };
+		CE8133751F5557F000AFBEBB /* BlockSaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8133631F5557F000AFBEBB /* BlockSaleCell.swift */; };
+		CE8133761F5557F000AFBEBB /* ChooseDetailsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8133641F5557F000AFBEBB /* ChooseDetailsTableVC.swift */; };
+		CE8133771F5557F000AFBEBB /* DatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8133651F5557F000AFBEBB /* DatePickerVC.swift */; };
+		CE8133781F5557F000AFBEBB /* FinalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8133661F5557F000AFBEBB /* FinalVC.swift */; };
+		CE8133791F5557F000AFBEBB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE8133671F5557F000AFBEBB /* Info.plist */; };
+		CE81337A1F5557F000AFBEBB /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8133681F5557F000AFBEBB /* LocationVC.swift */; };
+		CE81337B1F5557F000AFBEBB /* MainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8133691F5557F000AFBEBB /* MainTableVC.swift */; };
+		CE81337C1F5557F000AFBEBB /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81336A1F5557F000AFBEBB /* NameCell.swift */; };
+		CE81337D1F5557F000AFBEBB /* NumberSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81336B1F5557F000AFBEBB /* NumberSelectVC.swift */; };
+		CE81337E1F5557F000AFBEBB /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81336C1F5557F000AFBEBB /* PhotoCell.swift */; };
+		CE81337F1F5557F000AFBEBB /* PreviewLabelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81336D1F5557F000AFBEBB /* PreviewLabelsCell.swift */; };
+		CE8133801F5557F000AFBEBB /* PreviewTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81336E1F5557F000AFBEBB /* PreviewTableVC.swift */; };
+		CE8133811F5557F000AFBEBB /* TitleAndValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81336F1F5557F000AFBEBB /* TitleAndValueCell.swift */; };
+		CE8133821F5557F000AFBEBB /* YearPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8133701F5557F000AFBEBB /* YearPickerVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D53CA6663A89C49AAEBFD47 /* Pods-TendBlockChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendBlockChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-TendBlockChain/Pods-TendBlockChain.release.xcconfig"; sourceTree = "<group>"; };
+		3A748D655334447E6A0EA400 /* Pods-SampleSearchDetails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSearchDetails.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleSearchDetails/Pods-SampleSearchDetails.debug.xcconfig"; sourceTree = "<group>"; };
+		3B45D3EF8004B5C2F3AB7882 /* Pods-SampleSearchDetails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSearchDetails.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleSearchDetails/Pods-SampleSearchDetails.release.xcconfig"; sourceTree = "<group>"; };
+		48D40898C7168D5FC357CB8D /* Pods_TendBlockChain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TendBlockChain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CAB7327CA3C197FA0861B10 /* Pods-TendBlockChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendBlockChain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TendBlockChain/Pods-TendBlockChain.debug.xcconfig"; sourceTree = "<group>"; };
+		97FB7D490F90B7101BED1FB1 /* Pods_SampleSearchDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleSearchDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE81335D1F5557F000AFBEBB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE81335E1F5557F000AFBEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE8133601F5557F000AFBEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE8133621F5557F000AFBEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE8133631F5557F000AFBEBB /* BlockSaleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockSaleCell.swift; sourceTree = "<group>"; };
+		CE8133641F5557F000AFBEBB /* ChooseDetailsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseDetailsTableVC.swift; sourceTree = "<group>"; };
+		CE8133651F5557F000AFBEBB /* DatePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerVC.swift; sourceTree = "<group>"; };
+		CE8133661F5557F000AFBEBB /* FinalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalVC.swift; sourceTree = "<group>"; };
+		CE8133671F5557F000AFBEBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8133681F5557F000AFBEBB /* LocationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		CE8133691F5557F000AFBEBB /* MainTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableVC.swift; sourceTree = "<group>"; };
+		CE81336A1F5557F000AFBEBB /* NameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
+		CE81336B1F5557F000AFBEBB /* NumberSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSelectVC.swift; sourceTree = "<group>"; };
+		CE81336C1F5557F000AFBEBB /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		CE81336D1F5557F000AFBEBB /* PreviewLabelsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewLabelsCell.swift; sourceTree = "<group>"; };
+		CE81336E1F5557F000AFBEBB /* PreviewTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewTableVC.swift; sourceTree = "<group>"; };
+		CE81336F1F5557F000AFBEBB /* TitleAndValueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleAndValueCell.swift; sourceTree = "<group>"; };
+		CE8133701F5557F000AFBEBB /* YearPickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearPickerVC.swift; sourceTree = "<group>"; };
+		CEB1C3A01F4D82FB0076335A /* TendBlockChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TendBlockChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEB1C39D1F4D82FB0076335A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2C8F7C472DA7E05ECDCC92C /* Pods_TendBlockChain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C1C1305CB6489D12557DE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A748D655334447E6A0EA400 /* Pods-SampleSearchDetails.debug.xcconfig */,
+				3B45D3EF8004B5C2F3AB7882 /* Pods-SampleSearchDetails.release.xcconfig */,
+				4CAB7327CA3C197FA0861B10 /* Pods-TendBlockChain.debug.xcconfig */,
+				0D53CA6663A89C49AAEBFD47 /* Pods-TendBlockChain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE2F2CF505FF59D15F150916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97FB7D490F90B7101BED1FB1 /* Pods_SampleSearchDetails.framework */,
+				48D40898C7168D5FC357CB8D /* Pods_TendBlockChain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE81335C1F5557F000AFBEBB /* TendBlockChain */ = {
+			isa = PBXGroup;
+			children = (
+				CE81335D1F5557F000AFBEBB /* AppDelegate.swift */,
+				CE81335E1F5557F000AFBEBB /* Assets.xcassets */,
+				CE81335F1F5557F000AFBEBB /* LaunchScreen.storyboard */,
+				CE8133611F5557F000AFBEBB /* Main.storyboard */,
+				CE8133631F5557F000AFBEBB /* BlockSaleCell.swift */,
+				CE8133641F5557F000AFBEBB /* ChooseDetailsTableVC.swift */,
+				CE8133651F5557F000AFBEBB /* DatePickerVC.swift */,
+				CE8133661F5557F000AFBEBB /* FinalVC.swift */,
+				CE8133671F5557F000AFBEBB /* Info.plist */,
+				CE8133681F5557F000AFBEBB /* LocationVC.swift */,
+				CE8133691F5557F000AFBEBB /* MainTableVC.swift */,
+				CE81336A1F5557F000AFBEBB /* NameCell.swift */,
+				CE81336B1F5557F000AFBEBB /* NumberSelectVC.swift */,
+				CE81336C1F5557F000AFBEBB /* PhotoCell.swift */,
+				CE81336D1F5557F000AFBEBB /* PreviewLabelsCell.swift */,
+				CE81336E1F5557F000AFBEBB /* PreviewTableVC.swift */,
+				CE81336F1F5557F000AFBEBB /* TitleAndValueCell.swift */,
+				CE8133701F5557F000AFBEBB /* YearPickerVC.swift */,
+			);
+			path = TendBlockChain;
+			sourceTree = "<group>";
+		};
+		CEB1C3971F4D82FB0076335A = {
+			isa = PBXGroup;
+			children = (
+				CE81335C1F5557F000AFBEBB /* TendBlockChain */,
+				CEB1C3A11F4D82FB0076335A /* Products */,
+				05C1C1305CB6489D12557DE5 /* Pods */,
+				AE2F2CF505FF59D15F150916 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB1C3A11F4D82FB0076335A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1C3A01F4D82FB0076335A /* TendBlockChain.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEB1C39F1F4D82FB0076335A /* TendBlockChain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB1C3B21F4D82FB0076335A /* Build configuration list for PBXNativeTarget "TendBlockChain" */;
+			buildPhases = (
+				FC7E444CCAF3A06DE2848913 /* [CP] Check Pods Manifest.lock */,
+				CEB1C39C1F4D82FB0076335A /* Sources */,
+				CEB1C39D1F4D82FB0076335A /* Frameworks */,
+				CEB1C39E1F4D82FB0076335A /* Resources */,
+				8BC71C4F806E53453CA7C142 /* [CP] Embed Pods Frameworks */,
+				8A1C026A095547C082D85190 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TendBlockChain;
+			productName = SampleSearchDetails;
+			productReference = CEB1C3A01F4D82FB0076335A /* TendBlockChain.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB1C3981F4D82FB0076335A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Doru Cojocaru";
+				TargetAttributes = {
+					CEB1C39F1F4D82FB0076335A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = U3TUUW4WUG;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CEB1C39B1F4D82FB0076335A /* Build configuration list for PBXProject "TendBlockChain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEB1C3971F4D82FB0076335A;
+			productRefGroup = CEB1C3A11F4D82FB0076335A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEB1C39F1F4D82FB0076335A /* TendBlockChain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB1C39E1F4D82FB0076335A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8133791F5557F000AFBEBB /* Info.plist in Resources */,
+				CE8133741F5557F000AFBEBB /* Main.storyboard in Resources */,
+				CE8133721F5557F000AFBEBB /* Assets.xcassets in Resources */,
+				CE8133731F5557F000AFBEBB /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A1C026A095547C082D85190 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TendBlockChain/Pods-TendBlockChain-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC71C4F806E53453CA7C142 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TendBlockChain/Pods-TendBlockChain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC7E444CCAF3A06DE2848913 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEB1C39C1F4D82FB0076335A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE81337F1F5557F000AFBEBB /* PreviewLabelsCell.swift in Sources */,
+				CE8133781F5557F000AFBEBB /* FinalVC.swift in Sources */,
+				CE8133801F5557F000AFBEBB /* PreviewTableVC.swift in Sources */,
+				CE8133751F5557F000AFBEBB /* BlockSaleCell.swift in Sources */,
+				CE81337C1F5557F000AFBEBB /* NameCell.swift in Sources */,
+				CE81337D1F5557F000AFBEBB /* NumberSelectVC.swift in Sources */,
+				CE8133761F5557F000AFBEBB /* ChooseDetailsTableVC.swift in Sources */,
+				CE8133821F5557F000AFBEBB /* YearPickerVC.swift in Sources */,
+				CE81337B1F5557F000AFBEBB /* MainTableVC.swift in Sources */,
+				CE81337E1F5557F000AFBEBB /* PhotoCell.swift in Sources */,
+				CE8133771F5557F000AFBEBB /* DatePickerVC.swift in Sources */,
+				CE8133711F5557F000AFBEBB /* AppDelegate.swift in Sources */,
+				CE81337A1F5557F000AFBEBB /* LocationVC.swift in Sources */,
+				CE8133811F5557F000AFBEBB /* TitleAndValueCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE81335F1F5557F000AFBEBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8133601F5557F000AFBEBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE8133611F5557F000AFBEBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8133621F5557F000AFBEBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEB1C3B01F4D82FB0076335A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEB1C3B11F4D82FB0076335A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEB1C3B31F4D82FB0076335A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CAB7327CA3C197FA0861B10 /* Pods-TendBlockChain.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U3TUUW4WUG;
+				INFOPLIST_FILE = TendBlockChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TendBlockChain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEB1C3B41F4D82FB0076335A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D53CA6663A89C49AAEBFD47 /* Pods-TendBlockChain.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U3TUUW4WUG;
+				INFOPLIST_FILE = TendBlockChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TendBlockChain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB1C39B1F4D82FB0076335A /* Build configuration list for PBXProject "TendBlockChain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB1C3B01F4D82FB0076335A /* Debug */,
+				CEB1C3B11F4D82FB0076335A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB1C3B21F4D82FB0076335A /* Build configuration list for PBXNativeTarget "TendBlockChain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB1C3B31F4D82FB0076335A /* Debug */,
+				CEB1C3B41F4D82FB0076335A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEB1C3981F4D82FB0076335A /* Project object */;
+}

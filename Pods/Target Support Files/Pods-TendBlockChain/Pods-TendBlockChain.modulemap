@@ -1,0 +1,6 @@
+framework module Pods_TendBlockChain {
+  umbrella header "Pods-TendBlockChain-umbrella.h"
+
+  export *
+  module * { export * }
+}
